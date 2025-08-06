@@ -12,3 +12,12 @@ where:
 - `<tag>` is the current GitHub tag without the "v"
 
 The docker image can be found [here](https://hub.docker.com/r/rzuckerm/m4).
+
+## Running m4 scripts with command-line arguments
+
+The [run-m4](run-m4) script allows M4 scripts to be run that accept command-line
+arguments. The following variables are available to the script:
+
+- `ARGC` - The number of command-line arguments
+- `ARGV<n>` - The nth command-line arguments -- e.g., `ARGV1` is the first command-line
+  argument.
