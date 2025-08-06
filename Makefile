@@ -1,5 +1,5 @@
 M4_VERSION := $(shell cat M4_VERSION)
-M4_DEPS := $(wildcard M4_*)
+M4_DEPS := $(wildcard M4_*) run-m4
 DOCKER_TAG_PREFIX := rzuckerm/m4:$(M4_VERSION)
 DOCKER_TAG_SUFFIX ?= -dev
 

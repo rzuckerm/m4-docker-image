@@ -1,0 +1,10 @@
+#!/bin/bash
+PROG="$1"
+shift
+
+ARGS=(-DARGC=$#)
+for ((i=1; i<=$#; i++))
+do
+    ARGS+=(-DARGV$i='`'"$1'")
+done
+m4 "${ARGS[@]}" "${PROG}"
